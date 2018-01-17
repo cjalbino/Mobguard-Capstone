@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+
+    <Button
+        android:text="b a c k"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnback"
+        android:background="@android:color/holo_orange_light"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/gridView7"
+        android:layout_marginBottom="17dp" />
+
+    <GridView
+        android:layout_width="100dp"
+        android:layout_height="400dp"
+        android:id="@+id/gridView"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="25dp"
+        android:layout_above="@+id/btnback"
+        android:layout_toStartOf="@+id/gridView7" />
+
+    <GridView
+        android:layout_width="200dp"
+        android:layout_height="400dp"
+        android:id="@+id/gridView7"
+        android:layout_marginEnd="21dp"
+        android:layout_alignTop="@+id/gridView"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:text="S U B M I T"
+        android:layout_alignBaseline="@+id/btnview"
+        android:layout_alignBottom="@+id/btnview"
+        android:layout_alignEnd="@+id/editText7" />
+
+    <Button
+        android:id="@+id/btnview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:text="B A C K"
+        android:layout_marginBottom="121dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editText7" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:ems="10"
+        android:hint="State your reason here..."
+        android:inputType="textPersonName"
+        android:layout_marginBottom="68dp"
+        android:layout_above="@+id/btnsubmit"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

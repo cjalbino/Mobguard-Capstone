@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp">
+
+        <EditText
+            android:id="@+id/sgid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/sglogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp" />
+
+        <Button
+            android:text="L O G I N"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnloginsg"
+            android:background="@android:color/holo_orange_light"
+            android:layout_marginBottom="69dp"
+            android:onClick="onClicked"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/policeman"
+            android:id="@+id/sglogin"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/sgpass"
+            android:hint="Password"
+            android:password="true"
+            android:fontFamily="monospace"
+            android:layout_below="@+id/sgid"
+            android:layout_alignStart="@+id/sgid"
+            android:layout_marginTop="11dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

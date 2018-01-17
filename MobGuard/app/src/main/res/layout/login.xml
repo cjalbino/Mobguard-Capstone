@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp">
+
+        <EditText
+            android:id="@+id/userid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clientlogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="31dp"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:hint="Email"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/userpass"
+            android:hint="Password"
+            android:password="true"
+            android:fontFamily="monospace"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/userid"
+            android:layout_alignStart="@+id/userid" />
+
+        <Button
+            android:text="L O G I N"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnlogin"
+            android:background="@android:color/holo_orange_light"
+            android:onClick="onClicked"
+            android:layout_below="@+id/userpass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp" />
+
+        <ImageView
+            app:srcCompat="@drawable/team"
+            android:id="@+id/clientlogin"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
