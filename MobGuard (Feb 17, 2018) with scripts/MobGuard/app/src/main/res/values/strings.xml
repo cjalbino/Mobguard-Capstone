@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Jubecer Mobile Application</string>
+    <string name="title_activity_guard_service_req">GuardServiceReq</string>
+</resources>

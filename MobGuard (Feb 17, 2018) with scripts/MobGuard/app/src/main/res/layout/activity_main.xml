@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/csgms"
+            android:id="@+id/jubecerlogo"
+            android:layout_alignBottom="@+id/btnclient" />
+
+        <Button
+            android:text="I AM A CLIENT"
+            android:layout_width="283dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnclient"
+            android:elevation="19dp"
+            android:background="@android:color/holo_orange_light"
+            android:onClick="onClicked"
+            android:layout_marginBottom="17dp"
+            android:layout_above="@+id/btnsg"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:text="I AM A SECURITY GUARD"
+            android:layout_width="283dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnsg"
+            android:elevation="19dp"
+            android:background="@android:color/holo_orange_light"
+            android:onClick="onClicked"
+            android:layout_marginBottom="76dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/btnclient" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

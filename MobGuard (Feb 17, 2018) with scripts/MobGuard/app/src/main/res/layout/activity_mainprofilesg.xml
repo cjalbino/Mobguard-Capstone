@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/policeman"
+        android:id="@+id/imageView2"
+        android:layout_width="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_toStartOf="@+id/gridView2" />
+    <GridView
+        android:id="@+id/gridView2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_toStartOf="@+id/gridView3" />
+    <GridView
+        android:id="@+id/gridView3"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentEnd="true" />
+
+    <ListView
+        android:id="@+id/listView2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/gridView1"
+        android:layout_alignParentEnd="true" />
+    <ListView
+        android:id="@+id/listView3"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/listView2"
+        android:layout_alignParentEnd="true" />
+    <GridView
+        android:id="@+id/gridView4"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/listView3"
+        android:layout_alignStart="@+id/listView3" />
+    <GridView
+        android:id="@+id/gridView5"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/listView3"
+        android:layout_toStartOf="@+id/gridView6" />
+    <GridView
+        android:id="@+id/gridView6"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/listView3"
+        android:layout_alignParentEnd="true" />
+    <ListView
+        android:id="@+id/listView5"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/gridView4"
+        android:layout_alignParentEnd="true" />
+    <ListView
+        android:id="@+id/listView6"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/listView5"
+        android:layout_alignStart="@+id/listView7" />
+    <ListView
+        android:id="@+id/listView7"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/listView6"
+        android:layout_toEndOf="@+id/textView45"
+        android:layout_marginStart="10dp" />
+    <ListView
+        android:id="@+id/listView8"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/listView7"
+        android:layout_alignStart="@+id/listView7" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:layout_below="@+id/imageView2"
+        android:layout_toStartOf="@+id/gridView1"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birthday:"
+        android:layout_below="@+id/gridView1"
+        android:layout_toStartOf="@+id/listView2"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender:"
+        android:layout_below="@+id/listView2"
+        android:layout_toStartOf="@+id/listView3"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Address:"
+        android:layout_above="@+id/listView5"
+        android:layout_toStartOf="@+id/gridView4" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marital Status:"
+        android:layout_above="@+id/listView6"
+        android:layout_alignStart="@+id/textView41"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView47"
+        android:layout_below="@+id/listView6"
+        android:layout_marginTop="15dp"
+        android:text="Cellphone:" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status:"
+        android:layout_marginBottom="16dp"
+        android:layout_alignBottom="@+id/listView8"
+        android:layout_alignStart="@+id/textView38" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView45"
+        android:layout_alignStart="@+id/textView39"
+        android:layout_marginBottom="16dp"
+        android:text="Telephone:" />
+
+    <GridView
+        android:id="@+id/gridView13"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_below="@+id/listView7"
+        android:layout_marginEnd="18dp"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>
